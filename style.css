@@ -1,0 +1,38 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#drinks_block {
+	width: 25%;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+	height: 750px;
+	overflow: auto;
+}
+
+#drinks_names {
+	text-align: center;
+	font-size: 25px;
+	font-family: Georgia;
+	margin: 20px;
+	font-weight: bold;
+}
+
+#drinkImage {
+	width: 70%;
+	padding-left: 15%;
+	text-align: center;
+}
+
+#ingredient {
+	font-size: 20px;
+}
+
+#instruction_block {
+	border: 2px solid #ADD8E6;
+	font-size: 18px;
+	padding: 20px;
+	margin: 20px;
+}
