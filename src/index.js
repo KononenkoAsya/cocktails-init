@@ -7,8 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   _.times(8).forEach(async () => {
     const { body: { drinks } } = await getRandomCocktail()
 
-    drinks.forEach(({ strDrink,strInstructions, strDrinkThumb,strIngredient1,strIngredient2,strIngredient3, strIngredient4,strIngredient5,strIngredient6,strIngredient7,strIngredient8,strIngredient9,strIngredient10,strIngredient11,strIngredient12,strIngredient13,strIngredient14,strIngredient15}) => {
-
+    drinks.forEach(({ strDrink,strInstructions, strDrinkThumb,strIngredient1,
+    strIngredient2,strIngredient3, strIngredient4,strIngredient5,strIngredient6,
+    strIngredient7,strIngredient8,strIngredient9,strIngredient10,strIngredient11,
+    strIngredient12,strIngredient13,strIngredient14,strIngredient15}) => {
 
       const drink_block = document.createElement('div')
       drink_block.setAttribute('id','drinks_block')
