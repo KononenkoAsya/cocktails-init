@@ -12,38 +12,38 @@ document.addEventListener('DOMContentLoaded', () => {
     strIngredient7,strIngredient8,strIngredient9,strIngredient10,strIngredient11,
     strIngredient12,strIngredient13,strIngredient14,strIngredient15}) => {
 
-      const drink_block = document.createElement('div')
-      drink_block.setAttribute('id','drinks_block')
+      const drinkBlock = document.createElement('div')
+      drinkBlock.setAttribute('class','drinks-block')
 
-      const drinks_names = document.createElement('div')
-      drinks_names.setAttribute('id','drinks_names')
-      const drink_text = document.createTextNode(strDrink)
-      drinks_names.appendChild(drink_text)
+      const drinksNames = document.createElement('div')
+      drinksNames.setAttribute('class','drinks-block__drinks-names')
+      const drinkText = document.createTextNode(strDrink)
+      drinksNames.appendChild(drinkText)
 
-      const drinks_images = document.createElement('img')
-      drinks_images.setAttribute('id','drinkImage')
-      drinks_images.setAttribute('src',strDrinkThumb)
+      const drinksImages = document.createElement('img')
+      drinksImages.setAttribute('class','drinks-block__drink-image')
+      drinksImages.setAttribute('src',strDrinkThumb)
 
-      const ingredients_list = document.createElement('ul')
-      ingredients_list.setAttribute('id','ingredient')
+      const ingredientsList = document.createElement('ul')
+      ingredientsList.setAttribute('class','drinks-block__drink-ingredient')
 
-      const instruction_block = document.createElement('div')
-      const drink_instruction = document.createTextNode(strInstructions)
-      instruction_block.appendChild(drink_instruction)
-      instruction_block.setAttribute('id','instruction_block')
+      const instructionBlock = document.createElement('div')
+      const drinkInstruction = document.createTextNode(strInstructions)
+      instructionBlock.appendChild(drinkInstruction)
+      instructionBlock.setAttribute('class','drinks-block__instruction-block')
 
-      root.appendChild(drink_block)
-      drink_block.appendChild(drinks_names)
-      drink_block.appendChild(drinks_images)
-      drink_block.appendChild(instruction_block)
+      root.appendChild(drinkBlock)
+      drinkBlock.appendChild(drinksNames)
+      drinkBlock.appendChild(drinksImages)
+      drinkBlock.appendChild(instructionBlock)
 
       for (let i = 1; i < 16; i++) {
        if (eval('strIngredient'+i) != null && eval('strIngredient'+i) != '' && eval('strIngredient'+i) != undefined) {
           const li = document.createElement('li')
-          const list_item = document.createTextNode(eval('strIngredient'+i))
-          li.appendChild(list_item)
-          ingredients_list.appendChild(li)
-          drink_block.appendChild(ingredients_list)
+          const listItem = document.createTextNode(eval('strIngredient'+i))
+          li.appendChild(listItem)
+          ingredientsList.appendChild(li)
+          drinkBlock.appendChild(ingredientsList)
        }
       }
     })

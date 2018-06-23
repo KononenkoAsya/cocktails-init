@@ -3,7 +3,7 @@ body {
 	margin: 0;
 }
 
-#drinks_block {
+.drinks-block {
 	width: 25%;
 	float: left;
 	padding: 20px;
@@ -12,7 +12,7 @@ body {
 	overflow: auto;
 }
 
-#drinks_names {
+.drinks-block__drinks-names {
 	text-align: center;
 	font-size: 25px;
 	font-family: Georgia;
@@ -20,17 +20,17 @@ body {
 	font-weight: bold;
 }
 
-#drinkImage {
+.drinks-block__drink-image {
 	width: 70%;
 	padding-left: 15%;
 	text-align: center;
 }
 
-#ingredient {
+.drinks-block__drink-ingredient {
 	font-size: 20px;
 }
 
-#instruction_block {
+.drinks-block__instruction-block {
 	border: 2px solid #ADD8E6;
 	font-size: 18px;
 	padding: 20px;
