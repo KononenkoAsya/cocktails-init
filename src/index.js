@@ -7,10 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   _.times(8).forEach(async () => {
     const { body: { drinks } } = await getRandomCocktail()
 
-    drinks.forEach(({ strDrink,strInstructions, strDrinkThumb,strIngredient1,
-    strIngredient2,strIngredient3, strIngredient4,strIngredient5,strIngredient6,
-    strIngredient7,strIngredient8,strIngredient9,strIngredient10,strIngredient11,
-    strIngredient12,strIngredient13,strIngredient14,strIngredient15}) => {
+    drinks.forEach(({ strDrink,strInstructions, strDrinkThumb, ...ingredients}) => {
 
       const drinkBlock = document.createElement('div')
       drinkBlock.setAttribute('class','drinks-block')
@@ -37,15 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
       drinkBlock.appendChild(drinksImages)
       drinkBlock.appendChild(instructionBlock)
 
-      for (let i = 1; i < 16; i++) {
-       if (eval('strIngredient'+i) != null && eval('strIngredient'+i) != '' && eval('strIngredient'+i) != undefined) {
-          const li = document.createElement('li')
-          const listItem = document.createTextNode(eval('strIngredient'+i))
+      let filteredArray = Object.keys(ingredients).filter((ingredienttsFilter) => ingredienttsFilter.match(/^strIngredient\w*$/))
+      filteredArray.forEach((keyIngredient, valueIngredient) => {
+        if(ingredients[keyIngredient]) {
+          let li = document.createElement('li')
+          let listItem = document.createTextNode(ingredients[keyIngredient])
           li.appendChild(listItem)
           ingredientsList.appendChild(li)
-          drinkBlock.appendChild(ingredientsList)
-       }
-      }
+        }
+      })
+      drinkBlock.appendChild(ingredientsList)
+      })
     })
   })
-})
