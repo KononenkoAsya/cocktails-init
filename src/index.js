@@ -10,24 +10,24 @@ document.addEventListener('DOMContentLoaded', () => {
     drinks.forEach(({ strDrink,strInstructions, strDrinkThumb, ...ingredients}) => {
 
       const drinkBlock = document.createElement('div')
-      drinkBlock.setAttribute('class','drinks-block')
+      drinkBlock.setAttribute('class','drinks-block root__drinks-block')
 
       const drinksNames = document.createElement('div')
-      drinksNames.setAttribute('class','drinks-block__drinks-names')
+      drinksNames.setAttribute('class','drinks-names drinks-block__drinks-names')
       const drinkText = document.createTextNode(strDrink)
       drinksNames.appendChild(drinkText)
 
       const drinksImages = document.createElement('img')
-      drinksImages.setAttribute('class','drinks-block__drink-image')
+      drinksImages.setAttribute('class','drink-image drinks-block__drink-image')
       drinksImages.setAttribute('src',strDrinkThumb)
 
       const ingredientsList = document.createElement('ul')
-      ingredientsList.setAttribute('class','drinks-block__drink-ingredient')
+      ingredientsList.setAttribute('class','drink-ingredient drinks-block__drink-ingredient')
 
       const instructionBlock = document.createElement('div')
       const drinkInstruction = document.createTextNode(strInstructions)
       instructionBlock.appendChild(drinkInstruction)
-      instructionBlock.setAttribute('class','drinks-block__instruction-block')
+      instructionBlock.setAttribute('class','instruction-block drinks-block__instruction-block')
 
       root.appendChild(drinkBlock)
       drinkBlock.appendChild(drinksNames)
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       drinkBlock.appendChild(instructionBlock)
 
       let filteredArray = Object.keys(ingredients).filter((ingredienttsFilter) => ingredienttsFilter.match(/^strIngredient\w*$/))
-      filteredArray.forEach((keyIngredient, valueIngredient) => {
+      filteredArray.forEach((keyIngredient) => {
         if(ingredients[keyIngredient]) {
           let li = document.createElement('li')
           let listItem = document.createTextNode(ingredients[keyIngredient])

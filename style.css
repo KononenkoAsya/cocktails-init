@@ -12,7 +12,7 @@ body {
 	overflow: auto;
 }
 
-.drinks-block__drinks-names {
+.drinks-names {
 	text-align: center;
 	font-size: 25px;
 	font-family: Georgia;
@@ -20,17 +20,17 @@ body {
 	font-weight: bold;
 }
 
-.drinks-block__drink-image {
+.drink-image {
 	width: 70%;
 	padding-left: 15%;
 	text-align: center;
 }
 
-.drinks-block__drink-ingredient {
+.drink-ingredient {
 	font-size: 20px;
 }
 
-.drinks-block__instruction-block {
+.instruction-block {
 	border: 2px solid #ADD8E6;
 	font-size: 18px;
 	padding: 20px;
