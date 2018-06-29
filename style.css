@@ -1,38 +1,79 @@
 body {
 	padding: 0;
 	margin: 0;
+	background-image: url(background.jpg);
 }
 
 .drinks-block {
-	width: 25%;
-	float: left;
-	padding: 20px;
+	width: 80%;
+	height: 450px;
+	margin-left: 10%;
 	box-sizing: border-box;
-	height: 750px;
-	overflow: auto;
+	overflow: hidden;
+	color: white;
+	border: 2px solid white;
+	margin-top: 30px;
+	border-radius: 7px;
 }
 
 .drinks-names {
+	width: 100%;
 	text-align: center;
-	font-size: 25px;
+	font-size: 35px;
 	font-family: Georgia;
 	margin: 20px;
 	font-weight: bold;
+	display: inline-block;
 }
 
-.drink-image {
-	width: 70%;
-	padding-left: 15%;
-	text-align: center;
+.block-image {
+	height: 100%;
+	max-width: 35%;
+	overflow: hidden;
+	float: left;
+}
+
+.info-block{
+	float: left;
+	overflow: hidden;
+	height: 100%;
+	width: 65%;
+	padding-left: 40px;
+	box-sizing: border-box;
+}
+
+.drink-image{
+	height: 100%;
 }
 
 .drink-ingredient {
-	font-size: 20px;
+	font-size: 26px;
+	list-style-type: square;
+}
+
+.text-ingredient{
+	font-size: 30px;
+	margin: 0;
+}
+
+.list-block{
+	height: 100px;
+	width: 100%;
+	overflow: auto;
+	color: pink;
+}
+
+.drink-ingredient li{
+	list-style-type: none;
+	float: left;
+	margin-left: 10px;
 }
 
 .instruction-block {
-	border: 2px solid #ADD8E6;
-	font-size: 18px;
-	padding: 20px;
-	margin: 20px;
+	height: 200px;
+	font-size: 25px;
+	overflow: auto;
+	border: 2px solid white;
+	padding: 15px;
+	background-color: rgba(0,0,0,.3);
 }
