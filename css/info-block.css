@@ -1,0 +1,57 @@
+/*block includes basic information about the cockteil (name of cocktail, list of ingridients and inctruction)*/
+
+.drinks-block__info-block {
+	float: left;
+	overflow: hidden;
+	height: 100%;
+	width: 65%;
+	padding-left: 40px;
+	box-sizing: border-box;
+}
+
+.info-block__drinks-names {
+	width: 100%;
+	text-align: center;
+	font-size: 35px;
+	font-family: Georgia;
+	margin: 20px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.info-block__text-ingredient {
+	font-size: 30px;
+	margin: 0;
+}
+
+.info-block__list-block {
+	height: 100px;
+	width: 100%;
+	overflow: auto;
+	color: pink;
+	overflow: auto;
+}
+
+.list-block__drink-ingredient {
+	font-size: 26px;
+	list-style-type: square;
+}
+
+.drink-ingredient__list-ingredient {
+	list-style-type: none;
+	float: left;
+	margin-left: 10px;
+}
+
+.drink-ingredient__list-ingredient:before {
+    content: "* ";
+}
+
+.info-block__instruction-block {
+	height: 200px;
+	font-size: 25px;
+	overflow: auto;
+	border: 2px solid white;
+	padding: 20px;
+	background-color: rgba(255,255,255,.05);
+}
