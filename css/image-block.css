@@ -1,0 +1,12 @@
+/*block includes image of ccktail*/
+
+.drinks-block__image-block {
+	height: 100%;
+	max-width: 35%;
+	overflow: hidden;
+	float: left;
+}
+
+.image-block__drink-image {
+	height: 100%;
+}
