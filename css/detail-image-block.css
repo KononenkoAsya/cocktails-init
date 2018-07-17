@@ -1,0 +1,29 @@
+/*This block for displaying additional images*/
+
+.additional-info__left-block {
+		width: 30%;
+		float: left;
+		margin: 50px;
+}
+.left-block__detail-image-block {
+	width: 100%;
+	overflow: hidden;
+	float: left;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.detail-image-block__detail-drink-image {
+	width: 80%;
+	margin-bottom: 10px;
+	margin-top: 50px;
+	position: relative;
+}
+
+.detail-image-block__drinks-names {
+	font-family: 'Gaegu', cursive;
+	font-size: 35px;
+	margin-bottom: 50px;
+}
