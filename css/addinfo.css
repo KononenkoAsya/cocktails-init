@@ -7,13 +7,15 @@
 	display: none;
 	z-index: 100;
 	overflow: auto;
-	padding: 20px;
 	box-sizing: border-box;
 }
 
+
+@media (min-width: 769px) {
+
 .detail-info-block__detail-instruction-block {
 	width: 100%;
-	font-size: 25px;
+	font-size: 23px;
 	border-top: 2px solid white;
 	color: white;
 	box-sizing: border-box;
@@ -28,13 +30,7 @@
 	box-sizing: border-box;
 	padding: 45px;
 	margin-top: 50px;
-	margin-left: 50px;
-}
-
-.detail-info-block__text-ingredient {
-	font-size: 30px;
-	margin: 0;
-	color: white;
+	margin-left: 5%;
 }
 
 .detail-info-block__list-block {
@@ -47,7 +43,7 @@
 }
 
 .list-block__drink-ingredient {
-	font-size: 25px;
+	font-size: 23px;
 	padding: 0;
 	margin: 0;
 }
@@ -62,7 +58,7 @@
 
 .short-block__titles {
 	margin: 20px;
-	font-size: 35px;
+	font-size: 30px;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
@@ -84,4 +80,156 @@
 	text-align: center;
 	font-family: 'Walter Turncoat', cursive;
 }
+}
 
+
+@media (max-width: 768px) and (min-width: 481px) {
+
+.detail-info-block__detail-instruction-block {
+	width: 100%;
+	font-size: 18px;
+	border-top: 2px solid white;
+	color: white;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+}
+
+.additional-info__detail-info-block {
+	width: 90%;
+	border: 1px solid white;
+	box-sizing: border-box;
+	margin: 0 5% 5% 5%;
+	overflow: hidden;
+	padding: 15px;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.detail-info-block__text-ingredient {
+	font-size: 22px;
+	margin: 0;
+	color: white;
+}
+
+.detail-info-block__list-block {
+	width: 100%;
+	color: white;
+	overflow: auto;
+	margin-bottom: 15px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+}
+
+.list-block__drink-ingredient {
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+
+.drink-ingredient__list-ingredient {
+	list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.short-block__titles {
+	margin: 15px;
+	font-size: 22px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+.detail-info-block__category-block {
+	color: white;
+	font-size: 22px;
+}
+
+.detail-info-block__short-block {
+	color: white;
+	width: 100%;
+	font-size: 20px;
+	border-top: 2px solid white;
+	margin-top: 20px;
+	text-align: center;
+	font-family: 'Walter Turncoat', cursive;
+}
+}
+
+
+@media (max-width: 480px) {
+
+.detail-info-block__detail-instruction-block {
+	width: 100%;
+	font-size: 16px;
+	border-top: 2px solid white;
+	color: white;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+}
+
+.additional-info__detail-info-block {
+	width: 90%;
+	border: 1px solid white;
+	box-sizing: border-box;
+	margin: 0 5% 5% 5%;
+	overflow: hidden;
+	padding: 15px;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.detail-info-block__text-ingredient {
+	font-size: 22px;
+	margin: 0;
+	color: white;
+}
+
+.detail-info-block__list-block {
+	width: 100%;
+	color: white;
+	overflow: auto;
+	margin-bottom: 16px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+}
+
+.list-block__drink-ingredient {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+.drink-ingredient__list-ingredient {
+	list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.short-block__titles {
+	margin: 10px;
+	font-size: 20px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+.detail-info-block__category-block {
+	color: white;
+	font-size: 20px;
+}
+
+.detail-info-block__short-block {
+	color: white;
+	width: 100%;
+	font-size: 18px;
+	border-top: 2px solid white;
+	margin-top: 20px;
+	text-align: center;
+	font-family: 'Walter Turncoat', cursive;
+}
+}
