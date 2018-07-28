@@ -1,4 +1,34 @@
-/*block includes image of ccktail*/
+/*block includes image of cocktail*/
+
+@media (max-width: 480px) {
+	
+.drinks-block__image-block {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+
+.image-block__drink-image {
+	min-width: 100%;
+	height: 100%;
+}
+}
+
+@media (max-width: 1000px) and (min-width: 481px) {
+
+.drinks-block__image-block {
+	width: 100%;
+	overflow: hidden;
+	float: left;
+}
+
+.image-block__drink-image {
+	height: 100%;
+}
+}
+
+@media (min-width: 1001px) {
 
 .drinks-block__image-block {
 	height: 100%;
@@ -9,4 +39,5 @@
 
 .image-block__drink-image {
 	height: 100%;
+}
 }
